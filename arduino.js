@@ -9,7 +9,7 @@ http.createServer(function(request, response) {
   exec("bash drupal-notify.sh;", puts);
   console.log("Arduino works!");
   response.end();
-}).listen(1113);
+}).listen(port);
 
 
 function puts(error, stdout, stderr) { 
